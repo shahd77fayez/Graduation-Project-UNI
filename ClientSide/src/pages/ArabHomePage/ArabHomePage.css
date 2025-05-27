@@ -1,0 +1,113 @@
+
+/* Full-page solid background */
+.solid-backgroundArab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(241, 240, 239);
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Centered gradient background with curved borders */
+.gradient-backgroundArab{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 93%;
+    height: 89%;
+    padding: 20px; /* Add padding for inner content */
+    border-radius: 20px; /* Curved borders */
+    background: linear-gradient(to left, rgb(231, 209, 182), #ffffff);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    overflow-y: scroll ;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.132) rgba(0, 0, 0, 0); /* Scrollbar color */
+}
+
+/* Centered content inside the gradient background */
+.contentArab{
+    margin-top: 3%;
+    text-align: right;
+    color: rgb(44, 42, 39);
+
+}
+.contentArab h1{
+    display: inline-block; /* Allow the width to fit the content */
+    border-bottom: 6px solid rgb(201, 176, 146); /* Blue bottom border */
+    border-radius: 4px; /* Rounded corners */
+    max-width: 23vw; /* Maximum width *!*/
+    padding-bottom: 1%;
+
+}
+
+.selected-newsArab{
+    border-bottom: 8px solid rgb(201, 176, 146); /* Blue bottom border */
+    border-radius: 10px; /* Rounded corners */
+    width:13vw;
+}
+
+/* NewsList.css */
+.newsArab{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+/* App.css or HomeEnglish.css and ArabHomePage.css */
+.language-switcherArab {
+    position: relative;
+    top: 5%;
+    color: rgb(201, 176, 146);
+    background-color: rgba(14, 13, 13, 0.85);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    width: 2.5vw;
+}
+
+.language-switcherArab:hover {
+    background-color:rgb(201, 176, 146);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.98);
+
+}
+
+.searchBarArab{
+    margin-top: 2%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(23, 22, 22, 0.13);
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(33, 33, 33, 0.57);
+}
+
+
+::-webkit-scrollbar-button {
+    display:none;
+}
+

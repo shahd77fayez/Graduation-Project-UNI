@@ -1,0 +1,199 @@
+/* NewsItem.css */
+.news-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: auto;
+}
+
+.news-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.news-item.pop-up-active:hover {
+    transform: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Other styles remain the same */
+.news-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.news-title {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: #5a5a5a;
+}
+
+
+.news-header {
+    display: flex;
+    justify-content: space-between; /* Space between the items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 0; /* Optional padding for spacing */
+    border-bottom: 1px solid #ddd; /* Optional bottom border */
+}
+
+/* Optional styling for the date */
+.date-container {
+    display: flex;
+    gap: 5px;
+    text-align: left; /* Align text to the left */
+    font-size: 1em; /* Font size */
+    color: #888; /* Text color */
+
+}
+
+.date-container h4{
+    margin-top: 24px;
+}
+
+.calendar-icon {
+    margin-top: 24px;
+}
+
+
+/* Container for the icons */
+.icons-container {
+    display: flex;
+    gap: 10px; /* Space between the icons */
+    font-size: 1.5em; /* Increase icon size */
+    color: #888; /* Icon color */
+    justify-content: flex-end; /* Align icons to the right */
+}
+
+.comment-icon, .favorite-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.favorite-icon.favorite {
+    color: #007BFF;
+}
+
+.comment-icon:hover, .favorite-icon:hover {
+    color: #007BFF;
+    transform: scale(1.0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
+}
+
+.comments-popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height:70%;
+    max-width: 1500px;
+    padding: 20px;
+    color: rgba(9, 8, 7, 0.76);
+    background: #fff;
+    box-shadow: 0 0 100px 40px rgba(0, 0, 0, 1); /* Long shadow in all directions */
+    border-radius: 18px;
+    z-index: 1000;
+    font-size: larger;
+}
+.comments-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    /*margin-bottom: 20px;*/
+}
+.Commentdate-container{
+    display: flex;
+    gap: 5px;
+    text-align: left; /* Align text to the left */
+    font-size: 1em; /* Font size */
+    color: #888; /* Text color */
+}
+
+
+.Commentdate-container span{
+    margin-top: 20px;
+}
+.close-comments{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding-left: 10%;
+    margin-left:5%;
+    width:20%;
+    color: black;
+}
+.comments-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.Newscalendar{
+    margin-top: 20px;
+}
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.add-comment {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center the button horizontally */
+    gap: 10px; /* Optional: Space between textarea and button */
+    border-radius: 50px;
+    margin-top: 2%;
+}
+
+.comment-info p{
+    font-size: larger;
+}
+
+.add-comment textarea {
+    font-size: larger;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    justify-content: center; /* This ensures the button's content is centered, though it's redundant in this context */
+
+}
+.submit-comment {
+    background: #f5dbb7;
+    color: rgba(9, 8, 7, 0.76);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px rgba(0, 0, 0, 0.221);
+    width: 30%;
+    cursor: pointer;
+    justify-content: center; /* This ensures the button's content is centered, though it's redundant in this context */
+    text-align: center; /* Ensure text is centered inside the button */
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: larger;
+
+
+}
+.submit-comment:hover {
+    background: rgba(9, 8, 7, 0.76);
+    color: rgb(245, 219, 183);
+    transform: scale(1.02);
+
+}
+
+.error-message{
+    margin: auto;
+}

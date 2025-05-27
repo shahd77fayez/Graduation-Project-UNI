@@ -1,0 +1,65 @@
+/* Footer.css */
+.Xfooter {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 50px; /* Adjust the value to increase or decrease the curve */
+    border-bottom-right-radius: 50px;
+    background: url('./map3.png');
+    background-size: cover;
+    bottom: 0;
+    margin-top: 4%;
+}
+
+.Xfooter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.Xfooter-content p{
+    padding-bottom: 1%;
+}
+.Xfooter-links {
+    margin: 10px 0;
+    padding-bottom: 1%;
+}
+.Xfooter-links a {
+    color: #f5dbb7;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.Xfooter-links a:hover {
+    text-decoration: underline;
+}
+.Xinfo{
+    padding-bottom:0;
+}
+.Xsocial-icons {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1%;
+}
+.Xsocial-icons a {
+    color: #f5dbb7;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+.Xsocial-icons a:hover {
+    color: #ddd;
+}
+
+/* Footer.css */
+@media (max-width: 600px) {
+    .Xfooter-content {
+        flex-direction: column;
+    }
+    .Xfooter-links, .Xsocial-icons {
+        margin-top: 10px;
+    }
+}

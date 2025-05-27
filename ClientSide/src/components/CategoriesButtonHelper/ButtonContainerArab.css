@@ -1,0 +1,31 @@
+/* ButtonContainer.css */
+.button-containerArab {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    margin:auto;
+    flex: 1;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 992px) {
+  
+    .button-containerArab{
+        flex-direction: column;
+        width: 800px;
+        margin-top: 2px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .button-containerArab  {
+        flex-direction: column;
+        width: 500px;
+        height: 80%;
+        margin: 10px 0;
+        margin-top: 2px;
+    }
+}

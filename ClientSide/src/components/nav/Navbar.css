@@ -1,0 +1,229 @@
+/* Navbar.css */
+.navbarISA {
+    background-color: rgba(0, 0, 0, 0);
+    height: 60px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px; /* Curved borders */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logoISA {
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    text-underline: none;
+
+}
+
+.logo-linksISA {
+    color: rgba(51, 51, 51, 0.96);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menuISA {
+    list-style-type: none;
+    padding: 0;
+    /*margin-right: 50px;*/
+    display: flex;
+}
+
+.nav-itemISA {
+    margin: 0 10px;
+}
+
+.menu-iconISA {
+    display: none;
+}
+
+.nav-linksISA {
+    color: rgba(75, 73, 71, 0.99);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.9s ease;
+
+}
+
+.profile-iconISA {
+    color: rgba(9, 8, 7, 0.92);
+    cursor: pointer;
+    margin-left: 41%;
+    padding: 0;
+    position: relative;
+    font-size:xx-large;
+
+}
+
+/* Profile photo styling */
+.profile-photoISA {
+    margin-left: 2%;
+    width:90%; /* Adjust the size as necessary */
+    height: 100%; /* Adjust the size as necessary */
+    object-fit: cover; /* Cover the element's content */
+}
+
+
+/* Profile photo styling */
+.lock-photoISA {
+    margin-left: 25%;
+    margin-top: 25%;
+    /*margin: auto;*/
+    justify-content: center;
+    width:40%; /* Adjust the size as necessary */
+    height: 30%; /* Adjust the size as necessary */
+    object-fit: cover; /* Cover the element's content */
+}
+
+.nav-linksISA:hover {
+    background-color: rgba(87, 87, 87, 0.75);
+    color: #dec49f;
+}
+
+.overlayISA {
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.32); /* Black with some transparency */
+    z-index: 999; /* Ensure it's below the popup menu */
+    transition: opacity 2s ease; /* Smooth fade-in and fade-out */
+}
+.popup-menuISA.active {
+    right: 0; /* Slide in to the viewport */
+}
+
+
+.popup-menuISA {
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 2%; /* Aligns the popup to the very top of the viewport */
+    right: -100%; /* Aligns the popup to the very right of the viewport */
+    width: 25vw; /* Takes up half the width of the viewport */
+    height: 89.5vh; /* Takes up the full height of the viewport */
+    background-color: #fff;
+    box-shadow: -20px 0 150px -20px rgba(0, 0, 0, 1); /* Shadow on the left side */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+    padding: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+    overflow-y: auto;
+    transition: right 1.5s ease; /* Transition for sliding in from the right */
+}
+
+.popup-menuISA.active {
+    right: 0; /* Slide in to the viewport */
+    transition: right 1.5s ease; /* Transition for sliding in from the right */
+
+}
+
+.popup-menuISA ul {
+    list-style-type: none;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.popup-menuISA ul li {
+    margin-bottom: 5%;
+    display: flex;
+    align-items:center; /* Align items vertically */
+}
+
+.popup-menuISA ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    transition: background-color 0.3s ease;
+    width: 100vw;
+}
+
+.popup-menuISA ul li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+.popup-menuISA button {
+    background-color: #f0f0f000;
+    border-radius: 0.1px solid rgba(255, 255, 255, 0);
+    /* width:1px;
+    height:1px; */
+    border:none;
+}
+
+.close-iconISA{
+    color: rgba(9, 8, 7, 0.98);
+    cursor: pointer;
+    margin: auto;
+}
+
+
+
+/* Responsive styling for screen widths 768px and below */
+@media screen and (max-width: 768px) {
+    .menu-iconISA {
+        display: block;
+        color: rgba(33, 33, 33, 0.97);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-menuISA {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9); /* Add a background color for better visibility */
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    .nav-menuISA.active {
+        display: flex;
+    }
+
+    .nav-itemISA {
+        margin: 10px 0;
+    }
+
+    .nav-linksISA {
+        font-size: 16px; /* Adjust font size for readability */
+        padding: 10px; /* Adjust padding for better click area */
+    }
+}
+
+/* Additional responsive styling for screen widths 576px and below */
+@media screen and (max-width: 576px) {
+    /*.navbar {*/
+    /*    padding: 0 10px;*/
+    /*}*/
+
+    .navbar-logoISA {
+        font-size: 18px; /* Reduced size for smaller screens */
+    }
+
+    .nav-menuISA {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 10vw;
+        height: 20vh;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Background color for better visibility */
+    }
+
+    .nav-linksISA {
+        font-size: 10px; /* Reduce size for links */
+        /*padding: 1px 1px; !* Adjust padding *!*/
+    }
+
+    .profile-iconISA {
+        font-size: large; /* Adjust icon size */
+    }
+}

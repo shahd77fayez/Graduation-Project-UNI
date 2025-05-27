@@ -1,0 +1,39 @@
+.custom-button {
+    background-size:cover;
+    background-position: center;
+    border: none;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 190px;
+    height: 60px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Optional: add shadow */
+
+
+
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+    color: aqua;
+
+}
+
+.custom-button:active {
+    transform: scale(0.95);
+}
+
+.custom-button span{
+    background-color: rgba(6, 6, 7, 0.58);
+    border-radius: 5px;
+}
+
+
+.custom-button.selected {
+    color: #b0f6f6;
+}

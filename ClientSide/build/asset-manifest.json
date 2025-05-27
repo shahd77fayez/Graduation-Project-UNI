@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.646d11e3.css",
+    "main.js": "/static/js/main.7e5f7006.js",
+    "static/media/newsPaperLogin.jpeg": "/static/media/newsPaperLogin.c9d46d38cf73a4988a16.jpeg",
+    "static/media/1.png": "/static/media/1.e3361a41866f1b82cf1c.png",
+    "static/media/healthBlack.jpg": "/static/media/healthBlack.4b2fd3b5d69204656ff1.jpg",
+    "static/media/economyBlack.jpg": "/static/media/economyBlack.9cfbe23d64cdd9f05681.jpg",
+    "static/media/businessBlack.jpg": "/static/media/businessBlack.3a0595c5d542c5cd57d6.jpg",
+    "static/media/map3.png": "/static/media/map3.9f796433319a57545eb6.png",
+    "static/media/oklogin2.png": "/static/media/oklogin2.957a75277c8aeaa220ae.png",
+    "static/media/techBlack.jpg": "/static/media/techBlack.37d0403c6ef22878c264.jpg",
+    "static/media/entertBlack.jpg": "/static/media/entertBlack.710c1b43493e7a73b1ce.jpg",
+    "static/media/sportsBlack.jpg": "/static/media/sportsBlack.16793c58c04a5065794e.jpg",
+    "static/media/fashionBlack3.jpg": "/static/media/fashionBlack3.94279e77d209553f6957.jpg",
+    "index.html": "/index.html",
+    "main.646d11e3.css.map": "/static/css/main.646d11e3.css.map",
+    "main.7e5f7006.js.map": "/static/js/main.7e5f7006.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.646d11e3.css",
+    "static/js/main.7e5f7006.js"
+  ]
+}

@@ -1,0 +1,101 @@
+.solid-backgroundFav {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-direction: column;
+
+    gap: 40px;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent overflow */
+    background: linear-gradient(to left, rgb(231, 209, 182), #ffffff);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    padding-bottom: 3%;
+
+}
+.gradient-backgroundFav{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    padding: 10px; /* Add padding for inner content */
+    border-radius: 20px; /* Curved borders */
+    background-color: rgba(252, 249, 247, 0.99);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    overflow-y: scroll ;
+    overflow-x: scroll ;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.005); /* Scrollbar color */
+    margin: auto;
+
+}
+
+
+
+.article-listFav {
+    margin-top: 20px;
+}
+
+.article-containerFav {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.gradient-backgroundFav h2 {
+    color: #005c86;
+    margin-top: 3%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.article-containerFav:hover{
+    cursor: pointer;
+    background-color: #91c6ff34;
+}
+.article-containerFav h2 {
+    color: #2a2b2c;
+    font-size: 1.5rem;
+    margin-bottom: 10px; 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    border-bottom: 2px solid rgb(231, 209, 182); 
+    padding-bottom: 10px; 
+    
+}
+
+.article-containerFav p {
+    color: #505050;
+    margin-top: 5px; /* Adjust spacing above content */
+}
+
+.article-containerFav button {
+    align-self: flex-end; /* Align button to the end of the container */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 5px; /* Adjust spacing between content and button */
+}
+
+.article-containerFav button:hover {
+    opacity: 0.5;
+    color: #fff;
+}
+
+.favorite-iconFav {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+ .favorite-iconFav:hover {
+    color: #007BFF;
+    transform: scale(1.0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
+}

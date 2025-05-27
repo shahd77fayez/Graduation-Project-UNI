@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.753);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;  /* Adjust the width to make it smaller */
+  }
+  
+  .header .text {
+    color: rgb(49, 49, 49) ;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .header .underline {
+    width: 50px;
+    height: 4px;
+    background: #4e3b30;
+    margin: 10px auto;
+  }
+  
+  .inputs .input {
+    margin-bottom: 15px;
+  }
+  
+  .inputs .input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputs .input input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .inputs .input .radio {
+    margin-right: 5px;
+  }
+  
+  .inputs .input .usertype {
+    margin-right: 15px;
+  }
+  
+  .submit-container {
+    text-align: center;
+  }
+  
+  .submit-container button {
+    background-color: #4e3b30;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-container button:hover {
+    background-color: #90c0d3;
+  }
+  
+  .link-container {
+    text-align: center;
+  }
+  
+  .link-container p {
+    margin: 0;
+  }
+  
+  .link-container a {
+    color: #0d4f69;
+  }  

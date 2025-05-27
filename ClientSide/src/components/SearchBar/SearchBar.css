@@ -1,0 +1,58 @@
+/* SearchBar.css */
+.Xsearch-bar {
+    display: flex;
+
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    max-width: 100%;
+    width: 300px;
+    transition: border-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.58);
+    margin-left: 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Xsearch-bar:hover,
+.Xsearch-bar:focus-within {
+    border: 3px solid #dec49f;
+
+}
+
+.Xsearch-icon {
+    margin-right: 10px;
+    color: #888; /* Change this to your preferred color */
+    cursor: pointer; /* Ensures the icon appears clickable */
+    pointer-events: all; /* Ensures clicks are captured */
+
+}
+.Xsearch-icon:hover {
+
+    color: #d0bb9d; /* Change this to your preferred color */
+
+
+}
+
+.Xsearch-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    background: transparent;
+}
+
+.Xsearch-input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.Xsearch-bar:focus-within .search-input {
+    color: #000; /* Text color */
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        width: 100%;
+    }
+}

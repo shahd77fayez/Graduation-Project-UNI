@@ -1,0 +1,95 @@
+/* SearchPage.css */
+
+.solid-backgroundHistory {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-direction: column;
+
+    gap: 40px;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent overflow */
+    background: linear-gradient(to left, rgb(231, 209, 182), #ffffff);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    padding-bottom: 3%;
+
+}
+.gradient-backgroundHistory {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    padding: 10px; /* Add padding for inner content */
+    border-radius: 20px; /* Curved borders */
+    background-color: rgba(252, 249, 247, 0.99);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    overflow-y: scroll ;
+    overflow-x: scroll ;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.005); /* Scrollbar color */
+    margin: auto;
+
+}
+
+.gradient-backgroundHistory h2 {
+    color: #005c86;
+    margin-top: 3%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.Historyarticle-list {
+    margin-top: 3%;
+
+}
+
+.Historyarticle-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border-radius: 20px; /* Curved borders */
+    padding-left: 2%;
+}
+.Historyarticle-container:hover{
+    cursor: pointer;
+    background-color: #91c6ff34;
+}
+.Historyarticle-container h4 {
+    color: #2a2b2c;
+    font-size: 1.5rem;
+    margin-bottom: 10px; 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    border-bottom: 2px solid rgb(231, 209, 182); 
+    padding-bottom: 10px; 
+
+
+}
+
+.Historyarticle-container p {
+    color: #505050;
+    margin-top: 5px; /* Adjust spacing above content */
+}
+
+.Historydate-container{
+    display: flex;
+    gap: 5px;
+    text-align: left; /* Align text to the left */
+    font-size: 1em; /* Font size */
+    color: #888; /* Text color */
+}
+
+
+.hHistory-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-top: 5px;
+}

@@ -1,0 +1,156 @@
+.solidbackgroundNEWS {
+    display: flex;
+  
+    flex-direction: column;
+    gap: 40px;
+    height: 130vh;
+    overflow: hidden; /* Prevent overflow */
+    background: linear-gradient(to left, rgb(231, 209, 182), #ffffff);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+  
+}
+
+
+
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* Curved borders */
+    background-color: rgba(252, 249, 247, 0.99);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Optional: add shadow */
+    overflow-y: scroll ;
+    overflow-x: scroll ;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.005); /* Scrollbar color */
+    margin: auto;
+    text-align: left;
+    position: relative;
+    padding-left:1%;
+
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .picture_text_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Increased spacing */
+    width: 100%;
+    margin-bottom: 40px; /* Increased bottom margin */
+  }
+  
+  .picture_container, .text_container {
+    width: 45%; /* Reduced width to increase spacing */
+    margin-bottom: 40px; /* Increased bottom margin */
+  }
+  
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 100%;
+    border: 1px dashed #ccc;
+    border-radius: 40px;
+    margin-bottom: 5px; 
+  }
+  
+  .picture img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 40px;
+  }
+  
+  .text {
+    width: 95%;
+    height: 210px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-bottom: 44px;
+  }
+  
+  .or_label {
+    color: #4a64b2;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center; 
+  }
+  
+  .button_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Increased top margin */
+  }
+  
+  .customButton {
+    color: white !important;
+    background-color: rgb(63, 183, 252) !important;
+    border-color: rgb(63, 183, 252) !important;
+    border-radius: 40px !important;
+    padding: 10px 20px !important;
+  }
+  
+  .customButton:hover {
+    background-color: rgb(31, 31, 122) !important;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .uploadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(63, 183, 252);
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .uploadButton:hover {
+    background-color: rgb(31, 31, 122);
+  }
+  
+  .container h2{
+    color: #e2ca3f;
+  }
+  
+  .container h1{
+    color: #e2ca3f;
+  }
+  
+  .container p{
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  .body{
+    width:70%;
+    height: 50%;
+    padding: 0;
+    margin:0;
+    margin-left: 14%;
+  }
+
+
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  
